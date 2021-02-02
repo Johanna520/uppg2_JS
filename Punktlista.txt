@@ -1,0 +1,32 @@
+TODO!
+1.Börja med att skapa API-nycklar på Foursquare och Open Weather enligt beskrivningen ovan.
+
+#.Skapa en mapp på din dator med namnet “inlämningsuppgift 2”.
+
+#.Om du använder git (jag rekommenderar detta) så gör en commit för varje grej i sidan du får att fungera, så att du kan revert:a (“spola tillbaka”) om något går fel.
+
+#.Skapa ett HTML dokument (index.html) och ett CSS dokument (index.css) i mappen.
+
+5.Skapa en layout och styling för sidan med hårdkodade element (fakade sevärdheter och väderleksinformation). 
+    På det sättet kan du sedan koncentrera dig på JavaScript delen som är huvuddelen iden här uppgiften.
+
+6. Tänk på att ge id eller class attribut till de element som du behöver hämta data ifrån, modifiera, ta bort osv, så att du sedan kan använda DOM-API:et för att göra detta
+
+7.Skapa ett JavaScript dokument (main.js) och koppla samman <script src=”main.js”></script> i index.html.
+
+8.Gör en funktion för input från sökfältet. Detta kommer blidin huvudfunktion och döp den till något lämpligt, exempelvis executeSearch.
+
+9.Skapa variabler för API url:erna,använd string interpolation för de olika url-parametrarna.
+
+10.Gör funktioner för själva hämtningen av data från API:erna, en för FourSquare och en för Open Weather. Gör mycket console.log och step-through debugging.
+
+11.Använd objektdärdet är lämpligt.Exempelvis skulle svaret från ett API-anrop kunna representeras som ett objekt,
+     med en property som anger om resultatet var ok eller inte, samt data som rensats ut från svaret.
+
+12. Börja modifiera DOM med den datadu får tillbaka via dina hjälpfunktioner.
+
+13. Skriv så att det dyker upp bra felmeddelanden om något gårsnett. Dubbelkolla att det fungerar genom att sänka/stänga av ditt internet
+     via googlesdebug verktyg https://helpdeskgeek.com/networking/simulate-slow-internet-connection-testing/
+     och genom att söka på städer som inte finns.
+
+14. Slutgiltligen,se över koden och kommentera det du behöver, dubbelkolla G kraven, kanske städa upp bland variabler och variabelnamn.
