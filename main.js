@@ -1,11 +1,11 @@
+"strict mode";
 
+//search-city-imput
+const input = document.querySelector('input');
+const log = document.getElementById('values');
 
-dokument.getElementById(checkBox1).onchange = function(e){
-    let sec = document.getElementById("textWeather");
-    sec.classList.toggle("hide");
-}
+input.addEventListener('input', updateValue);
 
-dokument.getElementById(checkBox2).onchange = function(e){
-    let sec = document.getElementById("textAttractions1");
-    sec.classList.toggle("hide");
+function updateValue(e) {
+  log.textContent = e.target.value;
 }

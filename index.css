@@ -99,6 +99,6 @@ footer{
     background-color: rgb(32, 59, 94);
     width: 100%;
 }*/
-.hide{
-    display:none;
+#value{
+    color: green;
 }
