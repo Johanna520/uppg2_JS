@@ -7,7 +7,8 @@ TODO!
 
 #.Skapa ett HTML dokument (index.html) och ett CSS dokument (index.css) i mappen.
 
-5.Skapa en layout och styling för sidan med hårdkodade element (fakade sevärdheter och väderleksinformation). 
+
+#.Skapa en layout och styling för sidan med hårdkodade element (fakade sevärdheter och väderleksinformation). 
     På det sättet kan du sedan koncentrera dig på JavaScript delen som är huvuddelen iden här uppgiften.
 
 6. Tänk på att ge id eller class attribut till de element som du behöver hämta data ifrån, modifiera, ta bort osv, så att du sedan kan använda DOM-API:et för att göra detta

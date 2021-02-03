@@ -1,7 +1,9 @@
 *{
     padding: 0;
-    margin:0;
-    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    height: 100%;
 }
 
 body{
@@ -11,65 +13,62 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   color: rgb(32, 59, 94);
+
   
 }
 
 header{
-    background-color:rgb(32, 59, 94, 0.9);
-    
-    width: 100%;
     display: flex;
     justify-content:left;
     align-items: center;
-  
     position:fixed;
+
+    width: 100%;
     left: 0;
     top: 0;
-
+    
+    background-color:rgb(32, 59, 94, 0.7);
 }
   
 #airplane{
     height: 70px;
     width: 60px;
-    margin-left: 70%;
+    margin-left: 50%;
 }
 
 #title{
     flex-direction: row;
-    margin-left: 10%;
+    margin-left:50px;
     font-size: 22px;
     color: white;
 }
-
-section{
+.home-container{
     margin-top: 74px;
 }
+
 
 #top-container{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around; 
     align-items:center;
-    background-color:rgb(32, 59, 94, 0.6) ;
- 
+    background-color:rgb(32, 59, 94, 0.4) ;
+    height: 80px;
 }
 #searchbox{
     margin-left: 30%;
-    margin-top: 30px;
-}
 
+}
 #checkBoxes{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 hr{
-    
-    width: 100%;    
+    width: 100%;  
+    border-top: 2px solid white;
 }
 
 h2{
-   
-   
     margin: 10px 50px;
 }
 
@@ -82,22 +81,21 @@ h3{
     flex-wrap: wrap;
     justify-content:space-around; 
     align-items:center;
-    
 }
 
 section > div{
-    border: 3px solid white(99, 50, 50);
+    border: 2px solid white;
     padding: 10px;
     min-height: 10vh;   
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     background-color:  rgb(32, 59, 94, 0.5);
     color: white;
 }
-
+/*
 footer{
     position:fixed;
     left: 0;
     bottom: 0;
     background-color: rgb(32, 59, 94);
     width: 100%;
-}
+}*/
