@@ -1,28 +1,38 @@
 *{
     padding: 0;
     margin:0;
+    box-sizing: border-box;
 }
 
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(/Image/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(32, 59, 94);
+  
 }
 
 header{
+    background-color:rgb(32, 59, 94, 0.9);
     
-    background-color:rgb(32, 59, 94);
     width: 100%;
     display: flex;
     justify-content:left;
     align-items: center;
-    border: 1px  solid green ;
+  
+    position:fixed;
+    left: 0;
+    top: 0;
+
 }
   
 #airplane{
-height: 70px;
-width: 60px;
-margin-left: 70%;
+    height: 70px;
+    width: 60px;
+    margin-left: 70%;
 }
-
 
 #title{
     flex-direction: row;
@@ -30,28 +40,39 @@ margin-left: 70%;
     font-size: 22px;
     color: white;
 }
-main{
-    position: relative;
-      
+
+section{
+    margin-top: 74px;
 }
 
+#top-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around; 
+    align-items:center;
+    background-color:rgb(32, 59, 94, 0.6) ;
+ 
+}
 #searchbox{
-
-    margin-left: 50%;
+    margin-left: 30%;
     margin-top: 30px;
+}
 
+#checkBoxes{
+    margin-top: 30px;
 }
 
 hr{
-    border-top: 1px dashed green;
     
-    margin-top: 70px;
     width: 100%;    
 }
 
 h2{
+   
+   
     margin: 10px 50px;
 }
+
 h3{
     text-align: center;
 }
@@ -65,16 +86,18 @@ h3{
 }
 
 section > div{
-    border: 3px solid black;
+    border: 3px solid white(99, 50, 50);
     padding: 10px;
     min-height: 10vh;   
     margin-bottom: 50px;
-
+    background-color:  rgb(32, 59, 94, 0.5);
+    color: white;
 }
 
 footer{
     position:fixed;
-    margin-bottom: 0;
+    left: 0;
+    bottom: 0;
     background-color: rgb(32, 59, 94);
     width: 100%;
 }
