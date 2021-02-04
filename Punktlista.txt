@@ -1,5 +1,5 @@
 TODO!
-1.Börja med att skapa API-nycklar på Foursquare och Open Weather enligt beskrivningen ovan.
+# Börja med att skapa API-nycklar på Foursquare och Open Weather enligt beskrivningen ovan.
 
 #.Skapa en mapp på din dator med namnet “inlämningsuppgift 2”.
 
@@ -15,7 +15,7 @@ TODO!
 
 #.Skapa ett JavaScript dokument (main.js) och koppla samman <script src=”main.js”></script> i index.html.
 
-8.Gör en funktion för input från sökfältet. Detta kommer bli din huvudfunktion och döp den till något lämpligt, exempelvis executeSearch.
+#.Gör en funktion för input från sökfältet. Detta kommer bli din huvudfunktion och döp den till något lämpligt, exempelvis executeSearch.
 
 9.Skapa variabler för API url:erna,använd string interpolation för de olika url-parametrarna.
 
