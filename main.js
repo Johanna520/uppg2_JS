@@ -11,35 +11,52 @@ Enter ändras id="city" till det användaren skriver in i sökfältet.
 let input = document.getElementById('executeSearch');
 let log = document.getElementById('city');
 
-input.addEventListener('change', updateValue);
+input.addEventListener('change', cityName);
 
-function updateValue(e) {
+function cityName(e) {
   log.textContent = e.target.value;
 }
 }
-/*
-fetch('api.openweathermap.org/data/2.5/weather?q={city name}&appid=a0d70789704075e6099712d8603723f3 ') hämta api*/ 
 
+//City name = getCityWeatherURL (Se freläsnignen kl 11.00)
 
+/*för att man ska kunna få fram informationen  från checkbox ang väder. 
+*/
 {
-    document.getElementById("checkBox1").onchange = function(e){
-        var text = document.getElementById("textWeather");
-        if (checkBox1.checked == true){
+    document.getElementById("checkBox1").onchange = function showWeather (){
+        let text = document.getElementById("textWeather");
+        if (checkBox1.checked === true){
             text.style.display = "block";
           } else {
              text.style.display = "none";
           }
     }
+}
+
+/*för att man ska kunna få fram informationen  från checkbox ang attraktioner. 
+*/
+
+{
+    document.getElementById("checkBox2").onchange = function showAttractions (){
+        let text = document.getElementById("textAttractions");
+        if (checkBox2.checked === true){
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+        }
     }
+}
+/*
+fetch('api.openweathermap.org/data/2.5/weather?q={city name}&appid=a0d70789704075e6099712d8603723f3 ') hämta api*/ 
 
 
-    {
-        document.getElementById("checkBox2").onchange = function(e){
-            var text = document.getElementById("textAttractions");
-            if (checkBox2.checked == true){
-                text.style.display = "block";
-              } else {
-                 text.style.display = "none";
-              }
-        }
-        }
+//if - else if om ett land som inte finns med på listan = error
+
+
+/* 
+något sånt här för att få ut max 10 populära sevärdigheter?
+se föreläsning ca kl 10
+}
+
+
+*/
