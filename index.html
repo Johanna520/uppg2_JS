@@ -26,21 +26,23 @@
     <section>
       <section id="top-container">
         
-        <input typ="text" placeholder="Enter a city..." id="executeSearch" />
+      
+        <input typ="search" placeholder="Enter a city..." id="executeSearch" />
        
 
         
-            <form id="checkBoxes">
+            <div id="checkBoxes">
               
-
-
                 <input type="checkbox" id="checkBox1">
                 <label for="checkBox1"> Only weather</label><br>
+
                 <input type="checkbox" id="checkBox2">
                 <label for="checkBox2"> Only attractions</label><br>
+
                 <input type="checkbox" id="checkBox3">
-                <label for="checkBox3"> Filter alphabetically</label><br><br>
-            </form>
+                <label for="checkBox3"> Filter alphabetically</label>
+
+            </div>
         </section>
         <hr>            
         <h2 id="city"></h2>                  
@@ -49,11 +51,11 @@
         <br>
         <section id="flex-container1">
             <div id="textWeather">
-                <p>Thursday</p>
+                <p class="day">Thursday</p>
                 <br>
-                <p>Temerature: -2C</p>
+                <p class ="degree">Temerature: -2C</p>
                 <br>
-                <p> Condition: overcoast clouds </p>
+                <p class="description"> Condition: overcoast clouds </p>
             </div>       
         </section>
 <!--lägg till iconer för sevärdigheter ex, photo, dinner. -->

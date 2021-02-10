@@ -51,10 +51,10 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: rgb(32, 59, 94, 0.4);
-  height: 80px;
+  height: 150px;
 }
-#searchbox {
-  margin-left: 30%;
+#executeSearch {
+  margin-left: 20%;
 }
 #checkBoxes {
   margin-top: 15px;

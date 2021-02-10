@@ -7,16 +7,14 @@ jag använder mig av event "change". när användaren trycker på
 Enter ändras id="city" till det användaren skriver in i sökfältet. 
 
 */
-{
-let input = document.getElementById('executeSearch');
-let log = document.getElementById('city');
 
-input.addEventListener('change', cityName);
+let input = document.querySelector('#executeSearch');
+let outputElement = document.querySelector('#city');
 
-function cityName(e) {
-  log.textContent = e.target.value;
+input.onchange = function cityName(e) {
+  outputElement.innerText = e.target.value;
 }
-}
+
 
 //City name = getCityWeatherURL (Se freläsnignen kl 11.00)
 
@@ -46,6 +44,8 @@ function cityName(e) {
         }
     }
 }
+
+
 /*
 fetch('api.openweathermap.org/data/2.5/weather?q={city name}&appid=a0d70789704075e6099712d8603723f3 ') hämta api*/ 
 
