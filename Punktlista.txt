@@ -21,7 +21,7 @@ TODO!
 
 10.Gör funktioner för själva hämtningen av data från API:erna, en för FourSquare och en för Open Weather. Gör mycket console.log och step-through debugging.
 
-11.Använd objektdärdet är lämpligt.Exempelvis skulle svaret från ett API-anrop kunna representeras som ett objekt,
+11.Använd objekt där det är lämpligt.Exempelvis skulle svaret från ett API-anrop kunna representeras som ett objekt,
      med en property som anger om resultatet var ok eller inte, samt data som rensats ut från svaret.
 
 12. Börja modifiera DOM med den datadu får tillbaka via dina hjälpfunktioner.
