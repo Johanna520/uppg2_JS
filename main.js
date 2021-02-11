@@ -25,8 +25,11 @@
     }
 }
 
-let input = document.querySelector('#executeSearch');
+let input = document.querySelector("#executeSearch");
 let outputElement = document.querySelector("#textWeather");
+let city = document.querySelector("#city");
+let temp = document.querySelector("#temp");
+let wind = document.querySelector("#wind");
 
 function getCityWeatherUrl(input) {
   const url = new URL("https://api.openweathermap.org/data/2.5/weather");
@@ -37,7 +40,6 @@ function getCityWeatherUrl(input) {
   url.searchParams.append("units", "metric");
   url.searchParams.append("lang", "se");
 
-  outputElement.innerText = url;
 
   return url;
 }
@@ -54,12 +56,29 @@ input.onchange = async function() {
    
     const info = await serverResponse.json(); 
   
+  
 
-    outputElement.innerText = url;
-    
+    wind.innerText = info.wind.speed;
+    temp.innerText = info.main.temp;
   }
+// async/await try/catch som gäller se föreläsning 15.30
+
+//catch . alert(Unfortunately, this city does not exist. Please, choose another )
+
+ 
+/*
+search-city
+i min sök-input skriver jag in den stadjag vill söka efter. 
+jag använder mig av event "change". när användaren trycker på 
+Enter ändras id="city" till det användaren skriver in i sökfältet. 
+*/
 
 
+  input.addEventListener('change', cityName);
+
+function cityName(e) {
+  city.textContent = e.target.value;
+}
 
 
 //för att man ska kunna få fram informationen  från checkbox ang väder. 
