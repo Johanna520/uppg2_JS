@@ -99,6 +99,8 @@ footer{
 }*/
 
 #textWeather,
-#textAttractions {
+#textAttractions1,
+#textAttractions2,
+#textAttractions3 {
   display: none;
 }

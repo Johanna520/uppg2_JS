@@ -17,16 +17,16 @@ TODO!
 
 #.Gör en funktion för input från sökfältet. Detta kommer bli din huvudfunktion och döp den till något lämpligt, exempelvis executeSearch.
 
-9.Skapa variabler för API url:erna,använd string interpolation för de olika url-parametrarna.
+#.Skapa variabler för API url:erna,använd string interpolation för de olika url-parametrarna.
 
-10.Gör funktioner för själva hämtningen av data från API:erna, en för FourSquare och en för Open Weather. Gör mycket console.log och step-through debugging.
+#.Gör funktioner för själva hämtningen av data från API:erna, en för FourSquare och en för Open Weather. Gör mycket console.log och step-through debugging.
 
-11.Använd objekt där det är lämpligt.Exempelvis skulle svaret från ett API-anrop kunna representeras som ett objekt,
+#.Använd objekt där det är lämpligt.Exempelvis skulle svaret från ett API-anrop kunna representeras som ett objekt,
      med en property som anger om resultatet var ok eller inte, samt data som rensats ut från svaret.
 
-12. Börja modifiera DOM med den datadu får tillbaka via dina hjälpfunktioner.
+#. Börja modifiera DOM med den dat adu får tillbaka via dina hjälpfunktioner.
 
-13. Skriv så att det dyker upp bra felmeddelanden om något gårsnett. Dubbelkolla att det fungerar genom att sänka/stänga av ditt internet
+#. Skriv så att det dyker upp bra felmeddelanden om något gårsnett. Dubbelkolla att det fungerar genom att sänka/stänga av ditt internet
      via googlesdebug verktyg https://helpdeskgeek.com/networking/simulate-slow-internet-connection-testing/
      och genom att söka på städer som inte finns.
 
