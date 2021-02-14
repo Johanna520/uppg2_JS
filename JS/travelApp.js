@@ -12,7 +12,9 @@ let day = document.querySelector("#day");
 let attractionName1 = document.querySelector("#attractionName1");
 let attractionName2 = document.querySelector("#attractionName2");
 let attractionName3 = document.querySelector("#attractionName3");
-//let adress = document.querySelector("#adress");
+let adress1 = document.querySelector("#adress1");
+let adress2 = document.querySelector("#adress2");
+let adress3 = document.querySelector("#adress3");
 //let something = document.querySelector("#something");
 
 /*via metoder i searchParams fyller jag på url-objektet med vad som ska finnas i url. 
@@ -75,6 +77,7 @@ input.onchange = async function weather() {
     const Response = await fetch(attractionrUrl);
     const attractionInfo = await Response.json();
 
+    // Här tar jag in och lägger in information från respons.
     attractionName1.innerHTML =
       attractionInfo.response.groups[0].items[0].venue.name;
     attractionName2.innerHTML =
@@ -82,9 +85,13 @@ input.onchange = async function weather() {
     attractionName3.innerHTML =
       attractionInfo.response.groups[0].items[2].venue.name;
 
-    //adress.innerHTML = attractionInfo.response.;
-    //something.innerHTML = attractionInfo.response.groups[0].items[2].venue.name;
-    //day.innerHTML = ` ${weatherInfo.}`;
+    adress1.innerHTML =
+      attractionInfo.response.groups[0].items[0].venue.location.address;
+    adress2.innerHTML =
+      attractionInfo.response.groups[0].items[1].venue.location.address;
+    adress3.innerHTML =
+      attractionInfo.response.groups[0].items[2].venue.location.address;
+
     temp.innerHTML = `Temperature: ${weatherInfo.main.temp} &#8451;`;
     wind.innerHTML = `Wind speed: ${weatherInfo.wind.speed}`;
     desc.innerHTML = `Weather condition: ${weatherInfo.weather[0].main}`;

@@ -30,4 +30,5 @@ TODO!
      via googlesdebug verktyg https://helpdeskgeek.com/networking/simulate-slow-internet-connection-testing/
      och genom att söka på städer som inte finns.
 
-14. Slutgiltligen,se över koden och kommentera det du behöver, dubbelkolla G kraven, kanske städa upp bland variabler och variabelnamn.
+#. Slutgiltligen,se över koden och kommentera det du behöver, dubbelkolla G kraven, kanske städa upp bland variabler och variabelnamn.
+-- till nästa gång se över externa filer, gör flera js-filer. ex för denna uppgift: en fil för weather och en fil för attractions. 
